@@ -1,0 +1,27 @@
+
+.follower {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    /* background-color: black; */
+    margin-top: -25px;
+    margin-left: -25px;
+    pointer-events: none;
+    border-radius: 50%;
+    opacity: 0;
+    animation-name: follower_animation;
+    animation-duration: 0.8s;
+
+}
+
+@keyframes follower_animation {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
